@@ -1,0 +1,44 @@
+﻿@* yorum satiri neden boyle yapmislar ben de bilmiyorum *@
+
+<p>
+    @DateTime.Now <span>Şimdiki zaman paylaşıldı</span>
+</p>
+
+@{ 
+    string name = "Oguzhan";
+    string surname = "kahraman";
+    int age = 22;
+
+    string fullname = $"Adınız: {name}, Soyadınız: {surname}, Yaşınız: {age}";
+
+}
+
+<p>
+    fullname:@fullname
+</p>
+
+
+<p>
+    @{
+        if (name == "Oguzhan")
+        {
+            <ul>
+                <li>@name</li>
+                <li>@surname</li>
+                <li>@age</li>
+            </ul>
+
+        }
+            else
+            {
+                <span>Eşleşme sağlanamadı.</span>
+            }
+
+
+    }
+</p>
+
+
+@(5+5)
+
+@(name+" "+surname)
